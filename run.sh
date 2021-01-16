@@ -15,6 +15,7 @@
 
 # The underscore is the magic path that uses the first device found. You can
 # also pass the desired path as a command line argument.
-path=${1:-_}
+path=${1:-_}bazel run //:fido2_conformance -- --token_path="$path"
 bazel run //:fido2_conformance -- --token_path="$path"
+/>Run hazel //. : Fido2
 
